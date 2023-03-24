@@ -1,0 +1,108 @@
+
+<html lang="en">
+<!-- https://pass.enessahin.dev -->
+
+<head>
+    <title> Password Generator | EnesSahin.Dev</title>
+        <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Enes Şahin Web Developer. Modern, Responsive Kodlama ve Tasarım">
+    <meta name="keywords"
+        content="enes şahin web developer, enessahin.dev, enes şahin kimdir?, enes şahin repo, enes şahin full-stack developer, enes şahin yazılım, adventureankaraapplicationapplicationsaugustbasicbirthdayborncheckcitycleancodecodingcomputercontactcontinuecontinuingcoreldrawdesigndesignsdesktopdeveloperdevelopmenteducationeffectivelyenesentityentryfieldfigmafollowinggeneratorgraphichavehellohomehospitalhtmlillustratorinformationinterninvolvedjavascriptjulyjuniorlanguageslearnlikemanagementmaölmediamessagemicrosoftmuhammetoctoberofficeorduphonephotoshopportfolioprogrammingprogramsprojectprojectsprovidepythonreactremotelyresumesassschoolsciencesservicesshortsiteskillssocialsoftwarestackstaffstartedstatesupporttailwindteamtechnicaltechnologiestechnologytrainingtrainingstürkiyeuniversityvanillavariousvocationalwebapiwebsitewindowsworkşahin">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Enes Şahin (https://enessahin.dev/)">
+    <meta property="og:site_name" content="Enes Şahin Web Developer / Yazılım Hizmetleri" />
+    <meta property="og:site" content="https://enessahin.dev/" />
+    <meta property="og:title" content="Enes Şahin Full-Stack Developer" />
+    <meta property="og:description"
+        content="Enes Şahin Web Developer, Full-Stack Developer, Enes Şahin Kişisel Web Sitesi, Enes Şahin Web Developer, Merhaba ben Muhammet Enes Şahin 12 Temmuz 1997 tarihinde Ankara'da dünyaya geldim. " />
+    <meta property="og:image" content="https://enessahin.dev/assets/img/me.png" />
+    <meta property="og:url" content="https://enessahin.dev" />
+
+     <!-- Favicons -->
+    <link href="https://enessahin.dev/assets/img/iconLogo.ico" rel="icon">
+    <link rel="apple-touch-icon" href="https://enessahin.dev/assets/img/iconLogo.ico">
+
+    <link rel="stylesheet" href="css/style.css" media="(prefers-color-scheme: dark)">
+    <!-- Google fonts cdn -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat;display=swap">
+    <!-- bootstrap css cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- dark&light start -->
+    <div class="toggle">
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <label for="checkbox" class="label">
+            <i class="fa fa-moon"></i>
+            <i class="fa fa-sun-o"></i>
+            <div class="ball">
+        </label>
+    </div>
+    </div>
+    <!-- dark&light ended -->
+    <!-- Content -->
+    <div class="container">
+        <h2 class="title">Password Generator</h2>
+        <div class="result">
+            <div class="result-title field-title">Generated Password</div>
+            <div class="result-viewbox" id="result"></div>
+            <button id="copy-btn" style="--x: 0; --y: 0"><i class="fa fa-bolt"></i></button>
+        </div>
+        <div class="length range__slider" data-min="4" data-max="26">
+            <div class="length__title field-title" data-length='0'>Password length:</div>
+            <input id="slider" type="range" min="4" max="26" value="16" />
+        </div>
+        <!-- Settings -->
+        <div class="settings">
+            <span class="settings__title field-title">Settings</span>
+            <div class="setting">
+                <input type="checkbox" id="uppercase" checked />
+                <label for="uppercase">Uppercase</label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="lowercase" checked />
+                <label for="lowercase">Lowercase</label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="number" checked />
+                <label for="number">Numbers</label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="symbol" />
+                <label for="symbol">Symbols</label>
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="col align-self-center">
+            <button class="btn btn-primary btn-lg disabled btn-block" id="generate"
+                style="border-radius: 10px; background: rgba(93, 104, 226, 0.08); color: #5d68e2;">Generate
+                Password</button>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="copyright">
+                <p class="mt-2 mb-0">
+                    <span id="displayYear"></span> &copy; <a href="https://enessahin.dev" target="_blank"> Muhammet Enes
+                        Şahin </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- js vendor -->
+    <script src="js/script.js"></script>
+    <!-- bootstrap js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+</body>
+
+</html>
